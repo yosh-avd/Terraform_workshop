@@ -1,0 +1,13 @@
+[jenkinsmaster]
+192.168.1.30
+
+[jenkinsmaster:vars]
+ansible_user=ubuntu
+ansible_ssh_private_key_file=/opt/vpckey.pem
+
+[jenkinsslave]
+192.168.1.64
+
+[jenkinsslave:vars]
+ansible_user=ubuntu
+ansible_ssh_private_key_file=/opt/vpckey.pem
